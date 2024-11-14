@@ -883,10 +883,47 @@ footer .footer-bottom {
     color: #000;
 }
 
+/* PRELOADER */
 
+.preloader {
+    position: fixed; /* Sticks to the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Light background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Make sure it covers all content */
+}
 
-/* MODAL */
-.modal-button {
-    padding: 0;
-    border: 0;
+.box {
+    height: 5cm;
+    width: 5cm;
+    border: 5px solid #003366;
+    box-shadow: inset 0 0 0 #003366;
+    animation: load 2s ease-in-out infinite;
+}
+
+@keyframes load {
+    0% {
+        box-shadow: inset -2.5cm -2.5cm 0 #003366;
+    }
+
+    25% {
+        box-shadow: inset 2.5cm -2.5cm 0 #003366;
+    }
+
+    50% {
+        box-shadow: inset 2.5cm 2.5cm 0 #003366;
+    }
+
+    75% {
+        box-shadow: inset -2.5cm 2.5cm 0 #003366;
+    }
+
+    100% {
+        box-shadow: inset -2.5cm -2.5cm 0 #003366;
+    }
 }

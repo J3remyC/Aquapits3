@@ -25,10 +25,14 @@
     <!-- BOXICONS -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css" rel="stylesheet">
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <!-- META TAGS -->
     <meta property="og:title" content="Aquapits Solutions.">
-    <meta property="og:description" content="Explore professional aquarium setup, cleaning, and repair services tailored for aquatic beauty and health. Let us bring your aquatic vision to life!">
+    <meta property="og:description"
+        content="Explore professional aquarium setup, cleaning, and repair services tailored for aquatic beauty and health. Let us bring your aquatic vision to life!">
     <meta property="og:image" content="https://i.ibb.co/bNs7ngP/logo.png">
     <meta property="og:url" content="https://aquapits-solutions.com/">
     <meta property="og:type" content="website">
@@ -337,7 +341,8 @@
                 <img src="assets/img/team/jcob.jpg" alt="">
                 <div class="social-icons">
                     <a href="https://www.facebook.com/EmarkP3" target=_blank><i class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/glnmrkjcb?fbclid=IwY2xjawGihfhleHRuA2FlbQIxMAABHfp-MxIcED10YMVFUwcCNbJxwZUeAE8P8spIU7yYqkfEWqZVHmb2N039uw_aem_6RO8xjAiY3h89-xJMQOxQw" target=_blank><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.instagram.com/glnmrkjcb?fbclid=IwY2xjawGihfhleHRuA2FlbQIxMAABHfp-MxIcED10YMVFUwcCNbJxwZUeAE8P8spIU7yYqkfEWqZVHmb2N039uw_aem_6RO8xjAiY3h89-xJMQOxQw"
+                        target=_blank><i class="bx bxl-instagram"></i></a>
                     <a href="" target=_blank><i class="bx bxl-messenger"></i></a>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=your-email@example.com" target=_blank><i
                             class="bx bxl-gmail"></i></a>
@@ -504,7 +509,7 @@
 
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab" >
+                            aria-labelledby="pills-profile-tab">
                             <div class="review">
                                 <div class="stars">
                                     <i class="bx bxs-star"></i>
@@ -624,6 +629,14 @@
         </button>
     </a>
 
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="box"></div>
+    </div>
+
+
+
     <!-- BOOTSTRAP CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
@@ -656,6 +669,13 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+
+<script>
+    $(window).on("load", function() {
+        // Fade out the entire preloader (including background)
+        $(".preloader").fadeOut("slow");
+    });
+</script>
 
 </body>
 

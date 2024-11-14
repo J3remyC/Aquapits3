@@ -85,3 +85,8 @@ function clearFields() {
     document.getElementById('totalCost').textContent = '₱0';
     document.getElementById('totalCostMax').textContent = '₱0';
 }
+
+
+setTimeout(function() {
+    $(".preloader").fadeOut("slow");
+}, 1000); // Delay in milliseconds (1 second)
