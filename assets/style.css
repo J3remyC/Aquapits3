@@ -68,6 +68,9 @@ a {
     }
 }
 
+body{
+    background-color: var(--c-white);
+}
 
 /* navbar */
 .navbar {
@@ -357,6 +360,7 @@ a {
 
     flex-direction: column;
     gap: 10px;
+
 }
 
 .services-icon {
