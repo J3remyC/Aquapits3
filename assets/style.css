@@ -429,6 +429,8 @@ body{
     transition: var(--transition);
 }
 
+select{background-color: white;}
+
 .input-field span {
     position: absolute;
     top: 10px;
