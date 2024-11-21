@@ -106,7 +106,13 @@ function sendMail() {
       return;  // Prevent email from being sent
     }
 
-    // If all fields are filled, proceed with sending the email
+    // Validate email format (check if it contains "@gmail.com")
+    if (!email.includes("@gmail.com")) {
+      alert("Please enter a valid Gmail address.");
+      return; // Prevent email from being sent
+    }
+
+    // If all fields are filled and the email is valid, proceed with sending the email
     let parms = {
       name: name,
       email: email,

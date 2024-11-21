@@ -24,6 +24,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 50px;
+
 }
 
 .section {
@@ -735,7 +736,7 @@ small {
   display: flex;
   align-items: center;
   font-family: var(--f-base);
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .contact-input {
@@ -792,33 +793,7 @@ small {
   transform: translateY(15px);
 }
 
-.gmail-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  background-image: url("img/placeholders/img3.jpg");
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-
-}
-.gmail-container .gmail{
-  font-size: 10rem;
-  color: var(--c-white);
-  z-index: 999999;
-}
-.gmail-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-  background: linear-gradient(rgba(0, 51, 102, 0.5), rgba(0, 73, 145, 0.5));
-
-}
 /* footer */
 footer {
   padding-top: 80px;
