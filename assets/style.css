@@ -744,28 +744,45 @@ small {
   width: 100%;
   padding: 20px 30px;
   background: transparent;
-
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
   color: rgba(255, 255, 255, 0.5);
+  transition: var(--transition);
+}
 
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
   transition: var(--transition);
 }
-.contact-input::placeholder{
-  color: rgba(255, 255, 255, .5);
-  transition: var(--transition);
-}
-.contact-input:focus::placeholder{
+
+.contact-input:focus::placeholder {
   color: rgba(255, 255, 255, 1);
 }
 
-.contact-input:focus{
+.contact-input:focus {
   outline: none;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
   color: rgba(255, 255, 255, 1);
-
 }
+
+/* This will make the input field light up when there's text inside */
+.contact-input:valid {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* When the input/textarea is not showing the placeholder (i.e., it has content) */
+.contact-input:not(:placeholder-shown) {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* If the input/textarea has focus and is not empty */
+.contact-input:focus:not(:placeholder-shown) {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 
 .contacts-container button:hover {
   transform: translateY(-10px);

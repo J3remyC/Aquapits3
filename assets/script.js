@@ -128,3 +128,15 @@ function sendMail() {
         alert("There was an error sending your email.");
       });
   }
+
+  // Get the textarea element
+  const textArea = document.querySelector('.contact-input');
+
+  // Check for input and add/remove the class based on content
+  textArea.addEventListener('input', () => {
+    if (textArea.value.trim() !== '') {
+      textArea.classList.add('has-text');
+    } else {
+      textArea.classList.remove('has-text');
+    }
+  });
