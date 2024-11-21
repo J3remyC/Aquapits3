@@ -90,3 +90,35 @@ function clearFields() {
 setTimeout(function() {
     $(".preloader").fadeOut("slow");
 }, 1000); // Delay in milliseconds (1 second)
+
+
+// EMAIL JS
+function sendMail() {
+    // Get form field values
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    // Check if any of the fields are empty
+    if (!name || !email || !subject || !message) {
+      alert("Please fill out all fields before submitting.");
+      return;  // Prevent email from being sent
+    }
+
+    // If all fields are filled, proceed with sending the email
+    let parms = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message
+    };
+
+    // Send the email using EmailJS
+    emailjs.send("service_emv5iqe", "template_98vajbz", parms)
+      .then(function(response) {
+        alert("Email Sent!");
+      }, function(error) {
+        alert("There was an error sending your email.");
+      });
+  }
