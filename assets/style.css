@@ -23,7 +23,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 50px;
+  scroll-padding-top: 70px;
 
 }
 
@@ -688,6 +688,7 @@ small {
 
   justify-content: center;
   align-items: center;
+  height: 70vh;
 }
 
 #testimonials img {
@@ -728,7 +729,7 @@ small {
 /* contacts */
 
 #contact {
-  background: linear-gradient(rgba(0, 51, 102, 0.6), rgba(0, 51, 102, 0.6)),
+  background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)),
     url(img/placeholders/img5.jpg);
   background-size: cover;
   background-position: center;
